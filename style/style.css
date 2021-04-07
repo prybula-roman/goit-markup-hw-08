@@ -1,0 +1,60 @@
+:root {
+  --color-link: #212121;
+  --color-link-focus: #2196f3;
+  --color-link-tel: #757575;
+}
+
+.header {
+  color: #ffffff;
+}
+.link {
+  color: var(--color-link);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.feedback {
+  color: var(--color-link-tel);
+}
+
+.link:hover,
+.link:focus,
+.feedback:hover,
+.feedback:focus {
+  color: var(--color-link-focus);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.hero {
+  color: #ffffff;
+  background-color: #2f303a;
+  font-weight: 900;
+}
+
+.hero > h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.but {
+  background: #f5f4fa;
+  color: #212121;
+}
+
+.but:hover,
+.but:focus {
+  background: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
