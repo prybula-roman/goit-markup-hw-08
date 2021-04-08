@@ -1,22 +1,29 @@
 :root {
-  --color-link: #212121;
+  --color-text1: #212121;
+  --color-text2: #757575;
   --color-link-focus: #2196f3;
-  --color-link-tel: #757575;
+  --color-bg-body: #ffffff;
+  --color-bg-btn: #f5f4fa;
+  --color-hero: #2f303a;
 }
 
-.header {
-  color: #ffffff;
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
+
 .link {
-  color: var(--color-link);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
+  color: var(--color-text1);
 }
+
 .feedback {
-  color: var(--color-link-tel);
+  color: var(--color-text2);
 }
 
 .link:hover,
@@ -24,37 +31,78 @@
 .feedback:hover,
 .feedback:focus {
   color: var(--color-link-focus);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
 }
 
-.hero {
-  color: #ffffff;
-  background-color: #2f303a;
-  font-weight: 900;
+.hero,
+.footer {
+  background-color: var(--color-hero);
 }
 
-.hero > h1 {
-  font-style: normal;
+.h1 {
+  color: var(--color-bg-body);
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-}
-.but {
-  background: #f5f4fa;
-  color: #212121;
 }
 
-.but:hover,
-.but:focus {
-  background: #2196f3;
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.btn {
+  background-color: var(--color-bg-btn);
   border-radius: 4px;
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: var(--color-link-focus);
+  color: var(--color-bg-body);
+  border-radius: 4px;
+}
+
+.aspect h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.aspect p {
+  color: var(--color-text2);
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team {
+  background-color: var(--color-bg-btn);
+}
+
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team p {
+  color: var(--color-text2);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.address {
+  font-style: inherit;
 }
