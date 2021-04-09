@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff)
+      format("woff"),
+    url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff2)
+      format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --color-text1: #212121;
   --color-text2: #757575;
@@ -18,7 +29,31 @@
   overflow: hidden;
 }
 
+li {
+  list-style: none;
+}
+
 .link {
+  color: var(--color-text1);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo .web {
+  color: var(--color-link-focus);
+}
+.logo .studio {
   color: var(--color-text1);
 }
 
@@ -33,9 +68,9 @@
   color: var(--color-link-focus);
 }
 
-.hero,
-.footer {
+.hero {
   background-color: var(--color-hero);
+  text-align: center;
 }
 
 .h1 {
@@ -43,7 +78,6 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -51,6 +85,11 @@
 .btn {
   background-color: var(--color-bg-btn);
   border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .btn:focus,
@@ -69,7 +108,6 @@
 }
 .aspect p {
   color: var(--color-text2);
-  font-family: Roboto;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -87,11 +125,14 @@
   background-color: var(--color-bg-btn);
 }
 
+.ul-content {
+  text-align: center;
+}
+
 .team h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -99,10 +140,48 @@
   color: var(--color-text2);
   font-size: 16px;
   line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.footer {
+  background-color: var(--color-hero);
+}
+
+.footer .link {
+  font-style: normal;
+  color: var(--color-bg-body);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.footer .studio {
+  color: var(--color-bg-body);
+}
+.footer .link:focus,
+.footer .link:hover {
+  color: var(--color-link-focus);
+}
+
+/*==============portfolio=====================*/
+.btn-prtfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.address {
-  font-style: inherit;
+.btn-prtfolio:hover,
+.btn-prtfolio:focus {
+  background-color: var(--color-link-focus);
+  color: var(--color-bg-body);
+  border-radius: 4px;
+}
+
+.prtfolio-content {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
