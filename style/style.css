@@ -17,6 +17,12 @@
   --color-bg-btn: #f5f4fa;
   --color-hero: #2f303a;
 }
+.body {
+  color: #212121;
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
 
 .visually-hidden {
   position: absolute !important;
@@ -83,7 +89,8 @@ li {
 }
 
 .btn {
-  background-color: var(--color-bg-btn);
+  background-color: var(--color-link-focus);
+  color: var(--color-bg-body);
   border-radius: 4px;
   font-weight: bold;
   font-size: 16px;
@@ -91,13 +98,13 @@ li {
   text-align: center;
   letter-spacing: 0.06em;
 }
-
+/*
 .btn:focus,
 .btn:hover {
   background-color: var(--color-link-focus);
   color: var(--color-bg-body);
   border-radius: 4px;
-}
+}*/
 
 .aspect h3 {
   font-weight: bold;
@@ -165,6 +172,8 @@ li {
 
 /*==============portfolio=====================*/
 .btn-prtfolio {
+  background-color: var(--color-bg-btn);
+  color: var(--color-text1);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
