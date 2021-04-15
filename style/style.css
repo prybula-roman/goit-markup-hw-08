@@ -57,8 +57,10 @@ ul {
   margin: 0 auto;
 }
 
-.header {
+.header .conteiner {
   outline: 2px solid green;
+  display: flex;
+  justify-content: start;
 }
 
 .link {
@@ -98,6 +100,21 @@ ul {
 
 .header-logo-studio {
   color: var(--color-text1);
+}
+
+.nvg {
+  display: flex;
+  justify-content: start;
+}
+.nvg-list {
+  display: flex;
+  justify-content: start;
+}
+
+.header-contacts-list {
+  display: flex;
+  margin-left: auto;
+  background-color: blueviolet;
 }
 
 .footer {
