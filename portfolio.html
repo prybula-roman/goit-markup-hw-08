@@ -23,196 +23,246 @@
   <body>
     <header class="header">
       <!--Раздел основной навигации  -->
-      <nav class="nvg">
-        <!--- Ссылка на глав. стр. -->
-        <a href="./index.html" class="header-logo logo"
-          >Web<span class="header-logo-studio">Studio</span></a
-        >
-        <!--- Навигация на др. стр.  -->
-        <ul class="nvg-list">
-          <li>
-            <a href="./index.html" class="header-link link">Студия</a>
-          </li>
-          <li>
-            <a
-              href="./portfolio.html"
-              class="header-link header-link-portfolio link"
-              >Портофолио</a
+      <div class="container">
+        <nav class="nvg">
+          <!--- Ссылка на глав. стр. -->
+          <a href="./index.html" class="header-logo logo"
+            >Web<span class="header-logo-studio">Studio</span></a
+          >
+          <!--- Навигация на др. стр.  -->
+          <ul class="nvg-list list">
+            <li class="nvg-list-item">
+              <a href="./index.html" class="header-link link">Студия</a>
+            </li>
+            <li class="nvg-list-item">
+              <a
+                href="./portfolio.html"
+                class="header-link header-link-portfolio link"
+                >Портофолио</a
+              >
+            </li>
+            <li class="nvg-list-item">
+              <a href="#contacts" class="header-link header-link-contacts link"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!--- Навигация на стр. регистрации -->
+        <ul class="header-contacts-list list">
+          <li class="header-contacts-item">
+            <a href="mailto:info@devstudio.com" class="link feedback"
+              >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="#contacts" class="header-link header-link-contacts link"
-              >Контакты</a
+          <li class="header-contacts-item">
+            <a href="tel:+380961111111" class="link feedback"
+              >+38 096 111 11 11</a
             >
           </li>
         </ul>
-      </nav>
-      <!--- Навигация на стр. регистрации -->
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com" class="link feedback"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="link feedback"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- block hero -->
     <main class="main">
       <h1 class="visually-hidden">Портофолио</h1>
-      <section class="main-section-button">
+      
+      <section class="prtfl-section-button section">
         <h2 class="main-section-button-title title visually-hidden">
           Основной контент
         </h2>
-        <ul class="main-section-button-list list">
-          <li><button type="button" class="btn btn-prtfolio">Все</button></li>
-          <li>
-            <button type="button" class="btn btn-prtfolio">Веб-сайты</button>
-          </li>
-          <li>
-            <button type="button" class="btn btn-prtfolio">Приложения</button>
-          </li>
-          <li>
-            <button type="button" class="btn btn-prtfolio">Дизайн</button>
-          </li>
-          <li>
-            <button type="button" class="btn btn-prtfolio">Маркетинг</button>
-          </li>
-        </ul>
+         <div class="container">
+          <ul class="button-list card-set list">
+            <li class="button-list-item">
+              <div class="button-list-btn">
+                <button type="button" class="btn btn-prtfolio">Все</button>
+              </div>
+            </li>
+            <li class="button-list-item">
+              <div class="button-list-btn">
+                <button type="button" class="btn btn-prtfolio">
+                  Веб-сайты
+                </button>
+              
+            </li>
+            <li class="button-list-item">
+              <div class="button-list-btn">
+                <button type="button" class="btn btn-prtfolio">
+                  Приложения
+                </button>
+              </div>
+            </li>
+            <li class="button-list-item">
+              <div class="button-list-btn">
+                <button type="button" class="btn btn-prtfolio">Дизайн</button>
+              </div>
+            </li>
+            <li class="button-list-item">
+              <div class="button-list-btn">
+                <button type="button" class="btn btn-prtfolio">
+                  Маркетинг
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="main-section-content">
-        <h2 class="main-section-content-title title visually-hidden"></h2>
-        <ul class="main-section-content-list">
-          <li>
-            <img
-              src="./images/portfolio/img-0.jpg"
-              alt="технокряк"
-              width="370"
-              heght="294"
-            />
-            <h3 class="main-section-content-subtitle title">Технокряк</h3>
-            <p class="main-section-content-text text">Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/img-1.jpg"
-              alt="постер"
-              width="370"
-              heght="294"
-            />
-            <h3 class="main-section-content-subtitle title">
-              Постер New Orlean vs Golden Star
-            </h3>
-            <p class="main-section-content-text text">Дизайн</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/img-2.jpg"
-              alt="лого seafood"
-              width="370"
-              heght="294"
-            />
-            <h3 class="main-section-content-subtitle title">
-              Ресторан Seafood
-            </h3>
-            <p class="main-section-content-text text">Приложение</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/img-3.jpg"
-              alt="наушники"
-              width="370"
-              heght="294"
-            />
-            <h3 class="main-section-content-subtitle title">Проект Prime</h3>
-            <p class="main-section-content-text text">Маркетинг</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/img-4.jpg"
-              alt="коробки"
-              width="370"
-              heght="294"
-            />
-            <h3 class="main-section-content-subtitle title">Проект Boxes</h3>
-            <p class="main-section-content-text text">Приложение</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/img-5.jpg"
-              alt="монитор"
-              width="370"
-              heght="294"
-            />
-            <h3 class="main-section-content-subtitle title">
-              Inspiration has no Borders
-            </h3>
-            <p class="main-section-content-text text">Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/img-6.jpg"
-              alt="открытая книга"
-              width="370"
-              heght="294"
-            />
-            <h3 class="main-section-content-subtitle title">
-              Издание Limited Edition
-            </h3>
-            <p class="main-section-content-text text">Дизайн</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/img-7.jpg"
-              alt="label tag"
-              width="370"
-              heght="294"
-            />
-            <h3 class="main-section-content-subtitle title">Проект LAB</h3>
-            <p class="main-section-content-text text">Маркетинг</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/img-8.jpg"
-              alt="notebook"
-              width="370"
-              heght="294"
-            />
-            <h3 class="main-section-content-subtitle title">
-              Growing Business
-            </h3>
-            <p class="main-section-content-text text">Приложение</p>
-          </li>
-        </ul>
+      
+      <section class="prtfl-content section">
+        <h2 class="prtfl-content-title title visually-hidden"></h2>
+        <div class="container">
+          <ul class="prtfl-content-list card-set list">
+            <li class="prtfl-list-item">
+              <img
+                src="./images/portfolio/img-0.jpg"
+                alt="технокряк"
+                width="370"
+                heght="294"
+              />
+              <div class="prtfl-list-text">
+                <h3 class="prtfl-content-subtitle title">Технокряк</h3>
+                <p class="prtfl-content-text text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="prtfl-list-item">
+              <img
+                src="./images/portfolio/img-1.jpg"
+                alt="постер"
+                width="370"
+                heght="294"
+              />
+              <div class="prtfl-list-text">
+                <h3 class="prtfl-content-subtitle title">
+                  Постер New Orlean vs Golden Star
+                </h3>
+                <p class="prtfl-content-text text">Дизайн</p>
+              </div>
+            </li>
+            <li class="prtfl-list-item">
+              <img
+                src="./images/portfolio/img-2.jpg"
+                alt="лого seafood"
+                width="370"
+                heght="294"
+              />
+              <div class="prtfl-list-text">
+                <h3 class="prtfl-content-subtitle title">
+                  Ресторан Seafood
+                </h3>
+                <p class="prtfl-content-text text">Приложение</p>
+              </div>
+            </li>
+            <li class="prtfl-list-item">
+              <img
+                src="./images/portfolio/img-3.jpg"
+                alt="наушники"
+                width="370"
+                heght="294"
+              />
+              <div class="prtfl-list-text">
+                <h3 class="prtfl-content-subtitle title">
+                  Проект Prime
+                </h3>
+                <p class="prtfl-content-text text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="prtfl-list-item">
+              <img
+                src="./images/portfolio/img-4.jpg"
+                alt="коробки"
+                width="370"
+                heght="294"
+              />
+              <div class="prtfl-list-text">
+                <h3 class="prtfl-content-subtitle title">
+                  Проект Boxes
+                </h3>
+                <p class="prtfl-content-text text">Приложение</p>
+              </div>
+            </li>
+            <li class="prtfl-list-item">
+              <img
+                src="./images/portfolio/img-5.jpg"
+                alt="монитор"
+                width="370"
+                heght="294"
+              />
+              <div class="prtfl-list-text">
+                <h3 class="prtfl-content-subtitle title">
+                  Inspiration has no Borders
+                </h3>
+                <p class="prtfl-content-text text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="prtfl-list-item">
+              <img
+                src="./images/portfolio/img-6.jpg"
+                alt="открытая книга"
+                width="370"
+                heght="294"
+              />
+              <div class="prtfl-list-text">
+                <h3 class="prtfl-content-subtitle title">
+                  Издание Limited Edition
+                </h3>
+                <p class="prtfl-content-text text">Дизайн</p>
+              </div>
+            </li>
+            <li class="prtfl-list-item">
+              <img
+                src="./images/portfolio/img-7.jpg"
+                alt="label tag"
+                width="370"
+                heght="294"
+              />
+              <div class="prtfl-list-text">
+                <h3 class="prtfl-content-subtitle title">Проект LAB</h3>
+                <p class="prtfl-content-text text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="prtfl-list-item">
+              <img
+                src="./images/portfolio/img-8.jpg"
+                alt="notebook"
+                width="370"
+                heght="294"
+              />
+              <div class="prtfl-list-text">
+                <h3 class="prtfl-content-subtitle title">
+                  Growing Business
+                </h3>
+                <p class="prtfl-content-text text">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a href="./index.html" class="footer-logo logo"
-        >Web<span class="footer-logo-studio">Studio</span></a
-      >
-      <address class="footer-address" id="contacts">
-        <ul>
-          <li>
-            <a href="" class="footer-link link"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li>
-            <a href="mailto:info@example.com" class="footer-link-mail link"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380991111111" class="footer-link-tel link"
-              >+38 099 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="./index.html" class="footer-logo logo"
+          >Web<span class="footer-logo-studio">Studio</span></a
+        >
+        <address class="footer-address" id="contacts">
+          <ul class="footer-list list">
+            <li class="footer-list-item">
+              <a href="" class="footer-link link"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="mailto:info@example.com" class="footer-link-mail link"
+                >info@example.com</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="tel:+380991111111" class="footer-link-tel link"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
