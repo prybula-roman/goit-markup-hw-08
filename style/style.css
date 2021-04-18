@@ -310,7 +310,7 @@ img {
 
 .footer {
   margin: 0px;
-  outline: 2px solid palevioletred;
+  /*outline: 2px solid palevioletred;*/
   min-height: 250px;
   padding: 60px 0;
 }
