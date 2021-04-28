@@ -585,6 +585,10 @@ img {
   border: none;
 }
 
+.btn-all {
+  background-color: var(--color-link-focus);
+}
+
 .button-list {
   justify-content: center;
   /* padding-top: 94px; */
@@ -596,9 +600,9 @@ img {
   margin-left: 8px;
   align-items: center;
   word-wrap: break-word;
-
   /* outline: 2px solid black;*/
 }
+
 .prtfl-section-button {
   padding-bottom: 50px;
   padding-top: 94px;
