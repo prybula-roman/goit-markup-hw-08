@@ -294,10 +294,10 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
+/* 
 .engage {
-  /* outline: 2px solid red;*/
-}
+   outline: 2px solid red;
+} */
 .engage-title {
   font-weight: 700;
   font-size: 36px;
@@ -402,12 +402,16 @@ img {
   /* outline: 1px solid black; */
 }
 
-.social-icon-link:hover .social-icons-svg {
+.social-icon-link:hover .social-icons-svg,
+.social-icon-link:focus .social-icons-svg {
   background-color: var(--color-link-focus);
   fill: var(--color-bg-body);
+  border: none;
 }
-.social-icon-link:hover {
+.social-icon-link:hover,
+.social-icon-link:focus {
   background-color: var(--color-link-focus);
+  border: none;
 }
 
 .social-icons-svg {
@@ -485,6 +489,7 @@ img {
 
 .main-footer {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-address-block {
@@ -536,7 +541,7 @@ img {
 
 .footer-social-block {
   max-width: 206px;
-  padding-top: 13px;
+  /* padding-top: 13px; */
 }
 .footer-social-title {
   font-size: 14px;
@@ -587,6 +592,7 @@ img {
 
 .btn-all {
   background-color: var(--color-link-focus);
+  color: var(--color-bg-body);
 }
 
 .button-list {
