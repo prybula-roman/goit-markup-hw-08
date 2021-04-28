@@ -84,6 +84,7 @@ img {
 }
 
 .link {
+  display: inline-block;
   color: var(--color-text1);
   font-weight: 500;
   font-size: 14px;
@@ -622,6 +623,19 @@ img {
   word-wrap: break-word;
 
   /*outline: 2px solid black;*/
+}
+
+.prtfl-list-link {
+  /* display: inline-block; */
+}
+
+.prtfl-list-link:hover,
+.prtfl-list-link:focus {
+  background: var(--color-bg-body);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .prtfl-list-item:not(:nth-child(-n + 3)) {
