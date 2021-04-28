@@ -195,6 +195,7 @@ img {
 .hero {
   padding: 0px;
   background-color: var(--color-hero);
+  background-image: url("../image/");
   text-align: center;
   padding: 200px 0;
   /* max-width: 1600px; */
