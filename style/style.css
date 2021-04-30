@@ -15,6 +15,7 @@ html {
   --color-bg-body: #ffffff;
   --color-bg-btn: #f5f4fa;
   --color-hero: #2f303a;
+  --color-hero-dg: #c4c4c4;
 }
 .body {
   color: #212121;
@@ -194,17 +195,29 @@ img {
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
   padding: 0px;
-  background-color: var(--color-hero);
-  background-image: url("../image/");
   text-align: center;
   padding: 200px 0;
-  /* max-width: 1600px; */
+  max-width: 1600px;
   min-height: 600px;
   margin: 0 auto;
   /*outline: 2px solid tomato;*/
+  background-color: var(--color-hero-dg);
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  /* background-position: center; */
 }
-
+/* 
+.hero-section-bg {
+} */
 .hero-title {
   color: var(--color-bg-body);
   font-weight: 900;
