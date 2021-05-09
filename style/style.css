@@ -898,7 +898,9 @@ img {
   letter-spacing: 0.03em;
   color: var(--color-text2);
 }
+
 /* backdrop + modal */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -933,7 +935,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 8px;
+  padding: 40px;
 }
 .close-icon {
   display: inline-block;
@@ -950,4 +952,14 @@ img {
   pointer-events: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-inputs {
+  width: 448px;
+  height: 342px;
+}
+
+.form-label,
+.form-intext {
+  display: block;
 }
