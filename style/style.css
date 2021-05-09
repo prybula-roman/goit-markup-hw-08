@@ -129,6 +129,24 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-link-studio::after,
+.header-link-portfolio::after {
+  opacity: 1;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  /* background: #2196f3; */
+  background: var(--color-link-focus);
+  border-radius: 2px;
+  bottom: 0;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-link,
 .header-link {
   transition-property: color;
@@ -931,6 +949,6 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition-duration: 2050ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
