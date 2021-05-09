@@ -658,7 +658,6 @@ img {
   display: inline-block;
   margin-right: auto;
   margin-bottom: 20px;
-  /* padding-bottom: 20px; */
 }
 .footer-logo-studio {
   color: var(--color-bg-body);
