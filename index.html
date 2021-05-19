@@ -513,6 +513,28 @@
               </li>
             </ul>
           </div>
+          <div class="footer-form-box">
+            <form action="POST" class="footer-form">
+              <label for="footer-mail" class="footer-mail-label"
+                >Подпишитесь на рассылку</label
+              >
+              <input
+                type="email"
+                name="mail"
+                id="footer-mail"
+                placeholder="E-mail"
+                class="footer-mail"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              />
+              <button type="submit" class="form-btn btn">
+                <p class="btn-text">Подписаться</p>
+                <svg class="footer-telega-svg">
+                  <use href="./images/icons/telega.svg"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
