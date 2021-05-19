@@ -787,12 +787,8 @@ img {
   height: 24px;
   right: 28px;
   fill: var(--color-bg-body);
-  z-index: 100;
-  outline: 1px solid;
 }
 
-.btn-text {
-}
 /*==============portfolio=====================*/
 .btn-prtfolio {
   background-color: var(--color-bg-btn);
@@ -1015,4 +1011,9 @@ img {
 .form-label,
 .form-intext {
   display: block;
+}
+
+.form-input {
+  /* position: absolute; */
+  width: 100%;
 }
