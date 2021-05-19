@@ -321,14 +321,15 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
   border: none;
+  width: 200px;
+  height: 50px;
 }
 
 .hero-btn {
   background-color: var(--color-link-focus);
   color: var(--color-bg-body);
   border-radius: 4px;
-  width: 200px;
-  height: 50px;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -699,6 +700,7 @@ img {
 .footer-social-block {
   max-width: 206px;
   /* padding-top: 13px; */
+  margin-right: 93px;
 }
 .footer-social-title {
   font-size: 14px;
@@ -724,6 +726,41 @@ img {
   background-color: var(--color-link-focus);
 }
 
+.footer-form {
+  min-width: 570px;
+  min-height: 86px;
+  position: relative;
+}
+
+.footer-label-text {
+  font-style: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 3%;
+  color: var(--color-bg-body);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-form-btn {
+  position: relative;
+}
+
+.telegram-icon {
+  /* position: fixed; */
+  width: 24px;
+  height: 24px;
+  fill: var(--color-bg-body);
+}
 /*==============portfolio=====================*/
 .btn-prtfolio {
   background-color: var(--color-bg-btn);
