@@ -208,8 +208,6 @@
               <div class="team__box">
                 <h3 class="team__subtitle title">Игорь Демьяненко</h3>
                 <p class="team__text text">Product Designer</p>
-                <!-- </div>
-              <div class="social-icons"> -->
                 <ul class="social-list">
                   <li class="social-list__item">
                     <a href="" class="social-list__link">
@@ -261,8 +259,6 @@
               <div class="team__box">
                 <h3 class="team__subtitle title">Ольга Репина</h3>
                 <p class="team__text text">Frontend Developer</p>
-                <!-- </div>
-              <div class="social-icons"> -->
                 <ul class="social-list">
                   <li class="social-list__item">
                     <a href="" class="social-list__link">
@@ -314,8 +310,6 @@
               <div class="team__box">
                 <h3 class="team__subtitle title">Николай Тарасов</h3>
                 <p class="team__text text">Marketing</p>
-                <!-- </div>
-              <div class="social-icons"> -->
                 <ul class="social-list">
                   <li class="social-list__item">
                     <a href="" class="social-list__link link">
@@ -623,35 +617,37 @@
             <label for="comment" class="modal-form__label">Комментарий</label>
             <textarea
               placeholder="Введите текст"
-              class="form-comment"
+              class="modal-form__comment"
               name="comment"
               id="comment"
             >
             </textarea>
           </div>
-          <label for="conditions" class="checkbox-label">
+          <label for="conditions" class="modal-form__checkbox-label">
             <span class="check-position-wrapper">
               <input
-                class="custom-checkbox"
+                class="modal-form__checkbox"
                 type="checkbox"
                 name="conditions"
                 value="conditions submitted"
                 id="conditions"
                 required
               />
-              <svg class="icon-custom-checkbox" width="16px" height="15px">
+              <svg class="modal-form__check-icon" width="16px" height="15px">
                 <use href="./images/icons/sprite.svg#icon-checked"></use>
               </svg>
             </span>
-            <span class="policy-text">
+            <span class="modal-form__policy-text">
               Соглашаюсь с рассылкой и принимаю
-              <span class="policy-link">
+              <span class="modal-form__policy-link">
                 <a href="/">Условия договора</a>
               </span>
             </span>
           </label>
-          <div class="button-position">
-            <button class="submit-btn btn" type="submit">Отправить</button>
+          <div class="modal-form__button">
+            <button class="modal-form__submit btn" type="submit">
+              Отправить
+            </button>
           </div>
         </form>
         <!-- </div> -->
