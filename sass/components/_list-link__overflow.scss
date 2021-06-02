@@ -9,13 +9,14 @@
   text-align: left;
   transform: translateY(100%);
   transition-property: transform;
-  transition-duration: 2050ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  .list-link:hover & {
+  .list-link:hover &,
+  .list-link:focus & {
     transform: translatey(-100%);
     transition-property: transform;
-    transition-duration: 2050ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

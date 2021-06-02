@@ -867,14 +867,6 @@ header .container {
   overflow: hidden;
 }
 
-.list-link:hover .list-link__overflow-img,
-.list-link:focus .list-link__overflow-img {
-  transform: translatey(-100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .list-link__overflow {
   position: absolute;
   width: 100%;
@@ -886,14 +878,15 @@ header .container {
   text-align: left;
   transform: translateY(100%);
   transition-property: transform;
-  transition-duration: 2050ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-link:hover .list-link__overflow {
+.list-link:hover .list-link__overflow,
+.list-link:focus .list-link__overflow {
   transform: translatey(-100%);
   transition-property: transform;
-  transition-duration: 2050ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -916,7 +909,7 @@ header .container {
 
 .list-link__subtitle {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color-text1);
