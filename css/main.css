@@ -395,6 +395,7 @@ header .container {
 @media screen and (min-width: 320px) {
   .work-section__list {
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
