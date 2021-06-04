@@ -390,9 +390,10 @@ header .container {
   margin-left: -30px;
   margin-top: -30px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .work-section__list {
     justify-content: center;
     flex-wrap: wrap;
@@ -507,7 +508,7 @@ header .container {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .team__item {
     display: flex;
     flex-wrap: wrap;
