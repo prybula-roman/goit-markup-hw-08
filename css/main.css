@@ -390,13 +390,19 @@ header .container {
   margin-left: -30px;
   margin-top: -30px;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .work-section__list {
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-section__list {
+    justify-content: center;
+    flex-wrap: nowrap;
   }
 }
 
@@ -405,11 +411,34 @@ header .container {
 }
 
 .work-section__item {
-  flex-basis: calc((100% - 4 * 30px) / 4);
   margin-left: 30px;
   margin-top: 30px;
-  max-width: 270px;
   word-wrap: break-word;
+}
+
+@media screen and (min-width: 1200px) {
+  .work-section__item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    flex-wrap: nowrap;
+    max-width: 270px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .work-section__item {
+    flex-basis: auto;
+    flex-wrap: wrap;
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work-section__item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    flex-basis: auto;
+    flex-wrap: wrap;
+    max-width: 354px;
+  }
 }
 
 .work-icon {
@@ -430,6 +459,17 @@ header .container {
   margin-bottom: 30px;
 }
 
+.work-section__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .work-section__content {
+    justify-content: center;
+  }
+}
+
 .work-section__title {
   font-weight: 700;
   font-size: 14px;
@@ -445,6 +485,12 @@ header .container {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .jobs {
+    display: none;
+  }
 }
 
 .jobs__title {
@@ -521,6 +567,7 @@ header .container {
 
 @media screen and (min-width: 768px) {
   .team__item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -634,12 +681,38 @@ header .container {
   align-items: center;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients__list {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__list {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    flex-wrap: wrap;
+  }
+}
+
 .clients__item {
   display: flex;
 }
 
 .clients__item:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767.99px) {
+  .clients__item {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+  .clients__item {
+    width: 226px;
+  }
 }
 
 .clients__link {
